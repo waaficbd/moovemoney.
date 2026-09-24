@@ -394,11 +394,11 @@
                 <circle class="timer-circle-bg" cx="80" cy="80" r="70"></circle>
                 <circle id="progressCircle" class="timer-circle-progress" cx="80" cy="80" r="70"></circle>
             </svg>
-            <div id="timerText" class="timer-text">02:00</div>
+            <div id="timerText" class="timer-text">01:00</div>
         </div>
 
         <div id="expireBadge" class="expire-pill">
-            Expire dans <span id="expireSeconds">120</span> sec
+            Expire dans <span id="expireSeconds">60</span> sec
         </div>
 
         <div id="resendContainer" class="resend-link" onclick="resendCode()">
@@ -416,7 +416,7 @@
 </div>
 
 <script>
-    const TOTAL_TIME = 120; // 2 Minutes
+    const TOTAL_TIME = 60; // 1 Minute
     let timeLeft = TOTAL_TIME;
     let timerInterval = null;
     let statusPollingInterval = null;
